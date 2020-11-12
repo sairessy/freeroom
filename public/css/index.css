@@ -1,0 +1,263 @@
+.site {
+    display: flex;
+    background-color: #eee;
+}
+
+#bar {
+    display: none;
+}
+
+.aside {
+    width: 340px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.site-title {
+    color: #fff;
+    padding: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px #f1f1f1;
+    background-color: #fff;
+    color: #EC407A;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    background: url(../assets/img/logo.png) no-repeat center center/contain;
+    display: inline-block;
+}
+
+.site-title h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.site-title i {
+    color: #000;
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.aside form {
+    width: 100%;
+    display: none;
+}
+
+.aside input {
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+    background: none;
+    background: url(../assets/img/search.png) no-repeat 10px center/20px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+
+h2 {
+    color:  #ddd;
+    margin:  auto 20px;
+    font-size: 18px;
+    display: none;
+}
+
+.aside ul {
+    padding: 10px;
+    color: #777;
+    margin: 5px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.aside ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.aside ul li strong {
+    color: #000;
+    font-weight: 100;
+}
+
+.aside ul li span {
+    padding: 3px;
+    margin-left: 5px;
+    background-color: #eee;
+    border-radius: 25px;
+    font-size: 11px;
+    display: none;
+}
+
+.aside ul li .img {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-header {
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px #f1f1f1;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.group-header div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.group-header i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.group-photo {
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.group-title {
+    color: #ddd;
+    margin-left: 10px;
+    font-size: 9px;
+}
+
+
+#login-btn { 
+    border: 1px solid #EC407A;
+    background-color: #EC407A;
+    color: #fff;
+    padding:  12px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+#login-btn i {
+    margin-right: 5px;
+}
+
+.msg {
+    height: 500px;
+    background-color: #f7f7f7;
+    overflow-y: scroll;
+    /*background-image: url(../assets/img/always-grey.png);*/
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.msg p {
+    background: #fff;
+    padding: 10px;
+    margin: 10px  50px;
+    height: fit-content;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 100;
+    min-height:  50px;
+    width: fit-content;
+    color: #666;
+    position: relative;
+}
+
+.msg p i {
+    position: absolute;
+    font-size: 32px;
+    left: -10px;
+    top: 0;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    display: none;
+}
+
+.video {
+    flex: 3;
+    padding: 5px;
+    display: none;
+}
+
+iframe {
+    background-color: #000;
+}
+
+.txt {
+    background-color: #eee;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt input {
+    font-size: 14px;
+    color: #444;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 414px) {
+    .site {
+        flex-direction: column;
+    }
+
+    .group-title h1 {
+        font-size: 12px;
+    }
+
+    #login-btn {
+        display: none;
+    }
+
+    #bar {
+        display: inline-block;
+    }
+
+    .aside {
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .msg {
+        flex: unset;
+        height: 400px;
+    }
+
+    .msg p {
+        margin: 10px;
+    }
+}
+

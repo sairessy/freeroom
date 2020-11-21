@@ -8,7 +8,7 @@ input, button {
     padding: 15px 12px;
     border: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 2px;
 }
 
 .txt input[type="text"] {
@@ -17,15 +17,12 @@ input, button {
     border-bottom-right-radius: 0;
 }
 
-.txt input[type="text"]:focus {
-    background-color:  #fff;
-}
-
 button {
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #fff;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    border: 1px solid #eee;
     width: 100px;
 }
 
@@ -33,4 +30,11 @@ button i {
     margin: auto 10px;
     color: #EC407A;
     font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    align-items: center;
+    height: 17px;
+    padding: 15px;
 }

@@ -1,9 +1,9 @@
 .site {
     display: flex;
-    background-color: #eee;
 }
 
 #bar {
+    margin-left: 5px;
     display: none;
 }
 
@@ -15,18 +15,18 @@
 
 .site-title {
     color: #fff;
-    padding: 15px;
+    padding: 10px 0;
     height: 50px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px #f1f1f1;
-    background-color: #fff;
-    color: #EC407A;
+    box-shadow: 0 2px #f9f9f9;
+    color: #ec4079a2;
 }
 
 .logo {
-    width: 30px;
+    width: 100px;
     height: 30px;
+    margin: auto 5px;
     background: url(../assets/img/logo.png) no-repeat center center/contain;
     display: inline-block;
 }
@@ -34,12 +34,13 @@
 .site-title h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    font-size: 28px;
     align-items: center;
 }
 
 .site-title i {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     margin-right: 5px;
     cursor: pointer;
 }
@@ -68,11 +69,10 @@ h2 {
 }
 
 .aside ul {
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     color: #777;
     margin: 5px;
     height: 80vh;
-    overflow-y: scroll;
 }
 
 .aside ul li {
@@ -97,9 +97,11 @@ h2 {
 }
 
 .aside ul li .img {
-    width: 40px;
-    height: 40px;
-    background-color: #eee;
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
     border-radius: 100%;
     margin-right: 5px;
     display: flex;
@@ -115,12 +117,11 @@ h2 {
 
 .group-header {
     height: 50px;
-    padding: 15px;
+    padding: 15px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px #f1f1f1;
-    background-color: #fff;
+    box-shadow: 0 2px #f9f9f9;
     z-index: 1;
 }
 
@@ -129,15 +130,15 @@ h2 {
     align-items: center;
 }
 
-.group-header i {
+.group-header > div > i {
     margin-right: 5px;
+    font-size: 32px;
     cursor: pointer;
 }
 
 .group-photo {
     height: 30px;
     width: 30px;
-    background-color: #eee;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -146,19 +147,19 @@ h2 {
 }
 
 .group-title {
-    color: #ddd;
+    color: #000;
     margin-left: 10px;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 
 #login-btn { 
-    border: 1px solid #EC407A;
-    background-color: #EC407A;
-    color: #fff;
+    color: #000;
+    border: 1px solid #eee;    
     padding:  12px 10px;
     border-radius: 2px;
     font-size: 12px;
+    display: none;
 }
 
 #login-btn i {
@@ -167,19 +168,18 @@ h2 {
 
 .msg {
     height: 500px;
-    background-color: #f7f7f7;
     overflow-y: scroll;
-    /*background-image: url(../assets/img/always-grey.png);*/
-    border-bottom: 1px solid #ddd;
+    /* background-image: url(../assets/img/always-grey.png); */
     display: flex;
     padding: 10px;
+    background-color: #fcfcfc;
     flex-direction: column;
 }
 
 .msg p {
-    background: #fff;
+    background: #111;
     padding: 10px;
-    margin: 10px  50px;
+    margin: 2px  50px;
     height: fit-content;
     width: 80%;
     border-radius: 10px;
@@ -187,7 +187,7 @@ h2 {
     font-weight: 100;
     min-height:  50px;
     width: fit-content;
-    color: #666;
+    color: #888;
     position: relative;
 }
 
@@ -196,12 +196,11 @@ h2 {
     font-size: 32px;
     left: -10px;
     top: 0;
-    color: #fff;
+    color: #111;
     top: 0;
     bottom: 0;
     margin: auto;
     height: fit-content;
-    display: none;
 }
 
 .video {
@@ -215,7 +214,6 @@ iframe {
 }
 
 .txt {
-    background-color: #eee;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -225,7 +223,8 @@ iframe {
 .txt input {
     font-size: 14px;
     color: #444;
-    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-right: none;
 }
 
 @media screen and (max-width: 414px) {
@@ -234,7 +233,7 @@ iframe {
     }
 
     .group-title h1 {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     #login-btn {
@@ -249,11 +248,12 @@ iframe {
         width: 100%;
         position: fixed;
         z-index: 2;
+        display: none;
     }
 
     .msg {
         flex: unset;
-        height: 400px;
+        height: 70vh;
     }
 
     .msg p {

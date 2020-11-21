@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" type = "image/png" href = "assets/img/logo.png">
+    <link rel = "icon" type = "image/png" href = "assets/img/logo-o.png">
     <link rel="stylesheet" href="css/_libs/all.css">
     <link rel="stylesheet" href="css/_libs/emojionearea.min.css">
     <script src="js/_libs/jquery-3.5.1.min.js"></script>
@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Freeroom</title>
+    <link rel="stylesheet" href="components/css/meeting.css">
+    <title>codespace</title>
 </head>
 <body>
     <div class="site">
         <div class="aside">
                <div class="site-title">
-                    <i class="fa fa-bars" id="bar"></i><a href="index.html" ><h1><span class="logo"></span>Freeroom</h1></a>
+                    <i class="fa fa-bars" id="bar"></i><a href="index.html" ><h1><span class="logo"></span>space</h1></a>
                 </div>
 
             <form action="">
@@ -28,20 +29,10 @@
 
             <h2>333 users online</h2>
             <ul>
-                <li id="1"><div class="img"><i class="fa fa-desktop"></i></div><strong id="1">Computadores e Informática</strong><span>638</span></li>
-                <li id="2"><div class="img"><i class="fa fa-hot-tub"></i></div> <strong id="2">Saúde e Beleza </strong><span>638</span></li>
-                <li id="3"><div class="img"><i class="fa fa-graduation-cap"></i></div> <strong id="3">Emprego e Educação </strong><span>638</span></li>
-                <li id="4"><div class="img"><i class="fas fa-gamepad"></i></div> <strong id="4">Games e Lazer </strong><span>638</span></li>
-                <li id="5"><div class="img"><i class="fa fa-newspaper"></i></div> <strong id="5">Notícias </strong><span>638</span></li>
-                <li id="6"><div class="img"><i class="fa fa-dice"></i></div> <strong id="6">Arte e Entretenimento </strong><span>638</span></li>
-                <li id="7"><div class="img"><i class="fa fa-globe"></i></div> <strong id="7">Leis e governação</strong><span>638</span></li>
-                <li id="8"><div class="img"><i class="fa fa-book-open"></i></div> <strong id="8">Livros e Literatura </strong><span>638</span></li>
-                <li id="9"><div class="img"><i class="fas fa-chart-area"></i></div> <strong id="0">Finanças </strong><span>638</span></li>
-                <li id="10"><div class="img"><i class="fa fa-handshake"></i></div> <strong id="10">Negócios e Indústria </strong><span>638</span></li>
-                <li id="11"><div class="img"><i class="fas fa-people-carry"></i></div> <strong id="11">Pessoas e Sociedade </strong><span>638</span></li>
-                <li id="12"><div class="img"><i class="fa fa-brain"></i></div> <strong id="12">Política </strong><span>638</span></li>
-                <li id="13"><div class="img"><i class="fa fa-church"></i></div> <strong id="13">Religião </strong><span>638</span></li>
-                <li id="14"><div class="img"><i class="fa fa-futbol"></i></div> <strong id="14">Desporto </strong><span>638</span></li>
+                <li id="1"><div class="img" style="background-image: url(assets/img/lang/node-js.svg);"></div><strong id="1">Node/Js</strong><span>638</span></li>
+                <li id="2"><div class="img" style="background-image: url(assets/img/lang/php.svg);"></div><strong id="2">Php</strong><span>638</span></li>
+                <li id="3"><div class="img" style="background-image: url(assets/img/lang/java.svg);"></div><strong id="3">Java</strong><span>638</span></li>
+                <li id="4"><div class="img" style="background-image: url(assets/img/lang/python.svg);"></div><strong id="4">Python</strong><span>638</span></li>
             </ul>
         </div>
 
@@ -50,21 +41,39 @@
                 <div>
                     <i class="fa fa-bars" id="bar"></i>
                     <div class="group-photo"><i class="fas fa-hand-spock"></i></div>
-                    <div class="group-title"><h1>Default Room</h1></div>
+                    <div class="group-title"><h1>Main room</h1></div>
                 </div>
 
                 <div>
-                    <a href="#" id="login-btn"><i class="fa fa-plus"></i>Nova sala</a>
+                    <a href="#" id="login-btn"><i class="fa fa-plus"></i>Entrar</a>
                 </div>
             </div>
            
             <div class="msg">
+                <div class="meeting">
+                    <h1><span>Temas para discussão</span><span id="close"><i class="fa fa-bars"></i></span></h1>
+                    <ul></ul>
+
+                    <!-- <span><i class="fa fa-plus"></i></span> -->
+
+                    <form id="form-add-meeting">
+                        <input type="text" id="title" placeholder="Tema de discussão" required>
+                        <input type="date" id="date" required>
+                        <input type="time" id="time" placeholder="Hora" required>
+                        <select id="select-room">
+                            <option>Node/Js</option>
+                            <option>Php</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                        </select>
+                        <button>Agendar</button>
+                    </form>
+                </div>
             </div>
            
             <div class="txt">
                 <form action="">
-                    <input type="text" placeholder="Escrever mensagem..." id="input-msg" autofocus>
-                    <!-- <textarea name="" id="myTextarea"></textarea> -->
+                    <input type="text" placeholder="Escrever mensagem..." id="input-msg" autofocus spellcheck="false">
                     <button><i class="fa fa-paper-plane"></i></button>
                 </form>
             </div>

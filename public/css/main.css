@@ -5,13 +5,16 @@
 
 @font-face {
     src: url(../assets/fonts/Montserrat-Regular.otf);
-    font-family: mserrat;
+    font-family: ms;
+}
+
+:root {
+    --color-1: #272121;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-color: #eee;
 }
 
 * {
@@ -38,14 +41,14 @@ ul li {
 }
 
 ::-webkit-scrollbar-track {
-    background: #eee;
+    background: #f9f9f9;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ddd;
+    background: #eee;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ccc;
+    background: #ddd;
 }

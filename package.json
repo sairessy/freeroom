@@ -4,12 +4,14 @@
   "description": "Test nodejs",
   "main": "main.js",
   "scripts": {
-    "test": "node main"
+    "start": "node main"
   },
   "author": "Sairesse Victorino",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.1",
     "socket.io": "^2.3.0"
   }
 }

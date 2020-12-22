@@ -8,9 +8,12 @@
 }
 
 .aside {
-    width: 340px;
+    width: 240px;
     height: 100vh;
-    background-color: #fff;
+    background-color: #111;
+    color: #ccc;
+    border-right: 1px solid #eee;
+
 }
 
 .site-title {
@@ -19,7 +22,6 @@
     height: 50px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px #f9f9f9;
     color: #ec4079a2;
 }
 
@@ -70,7 +72,6 @@ h2 {
 
 .aside ul {
     padding: 10px 0 10px 10px;
-    color: #777;
     margin: 5px;
     height: 80vh;
 }
@@ -83,7 +84,6 @@ h2 {
 }
 
 .aside ul li strong {
-    color: #000;
     font-weight: 100;
 }
 
@@ -96,9 +96,9 @@ h2 {
     display: none;
 }
 
-.aside ul li .img {
-    width: 35px;
-    height: 35px;
+.aside ul li i {
+    width: 25px;
+    height: 25px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -121,7 +121,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px #f9f9f9;
+    border-bottom: 1px solid #ccc;
     z-index: 1;
 }
 
@@ -169,10 +169,9 @@ h2 {
 .msg {
     height: 500px;
     overflow-y: scroll;
-    /* background-image: url(../assets/img/always-grey.png); */
     display: flex;
     padding: 10px;
-    background-color: #fcfcfc;
+    background-color: #f1f1f1;
     flex-direction: column;
 }
 
@@ -182,12 +181,12 @@ h2 {
     margin: 2px  50px;
     height: fit-content;
     width: 80%;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 12px;
     font-weight: 100;
     min-height:  50px;
     width: fit-content;
-    color: #888;
+    color: #ddd;
     position: relative;
 }
 
@@ -218,6 +217,7 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ddd;
 }
 
 .txt input {
@@ -225,6 +225,10 @@ iframe {
     color: #444;
     border: 1px solid #eee;
     border-right: none;
+}
+
+button {
+    background-color: #111;
 }
 
 @media screen and (max-width: 414px) {
@@ -248,7 +252,6 @@ iframe {
         width: 100%;
         position: fixed;
         z-index: 2;
-        display: none;
     }
 
     .msg {

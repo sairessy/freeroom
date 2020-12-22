@@ -1,10 +1,11 @@
 .meeting {
     margin: 0 50px 10px 50px;
-    border-radius: 10px;
+    border-radius: 2px;
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .meeting h1 {
@@ -14,7 +15,7 @@
     font-size: 18px;
     font-weight: 100;
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .meeting ul {
@@ -60,6 +61,7 @@
     border: 1px solid #eee;
     padding: 10px 5px;
     border-radius: 5px;
+    color: #ddd;
 }
 
 .meeting #close {

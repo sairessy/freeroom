@@ -105,6 +105,7 @@ $(document).ready(() => {
 	});
 
 	const name = prompt('Seu nome ou nickname!');
+	// const name = 'Logan'
 
 	socket.emit('join', {roomId, name});
 
